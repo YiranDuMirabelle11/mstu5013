@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>MSTU CHAT!</title>
+	<title>Welcome to Our Chat!</title>
 </head>
 <body>
 	<app></app>
@@ -17,20 +17,25 @@
 	<script src="js/firebase.js"></script>
 	<!-- <script src="js/utilities.js"></script> -->
 
-	<script>
-	  // Initialize Firebase
-	  var config = {
-	    apiKey: "AIzaSyBEbOWvV5Fig3eNvWVWValUExl-_WBBxEo",
-	    authDomain: "mstu5013.firebaseapp.com",
-	    databaseURL: "https://mstu5013.firebaseio.com",
-	    projectId: "mstu5013",
-	    storageBucket: "mstu5013.appspot.com",
-	    messagingSenderId: "953045445181"
-	  };
-	  firebase.initializeApp(config);
 
-		// Global Cached -> Most useful Firebase refs accessible anywhere.
-		// HERE
+
+
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script>
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBWITXt5Zz13QC3rx-a5SdGE4X_gznkqR8",
+    authDomain: "chatroon-yiran.firebaseapp.com",
+    databaseURL: "https://chatroon-yiran.firebaseio.com",
+    projectId: "chatroon-yiran",
+    storageBucket: "chatroon-yiran.appspot.com",
+    messagingSenderId: "157587848803"
+  };
+  firebase.initializeApp(config);
+
+	// Global Cached -> Most useful Firebase refs accessible anywhere.
+	var database = firebase.database();
 
 		// Initialize Riot
 		riot.mount('*');
